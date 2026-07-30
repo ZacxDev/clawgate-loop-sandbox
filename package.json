@@ -1,0 +1,9 @@
+{
+  "name": "clawgate-loop-sandbox",
+  "version": "0.1.0",
+  "description": "Regression fixture for the clawgate dispatch pipeline. Zero dependencies on purpose.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
