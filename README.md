@@ -39,3 +39,18 @@ no lint step on purpose — a failing `npm test` is unambiguous.
 - ES modules (`"type": "module"`), `.js` extensions in imports.
 - One module per topic in `src/`, one `*.test.js` per module in `test/`.
 - Tests use `node:test` + `node:assert/strict`.
+
+## Collections
+
+| Function       | Description |
+|----------------|-------------|
+| `chunk`        | Split array into chunks of `size`; last chunk may be shorter |
+| `unique`       | Deduplicate preserving first-seen order |
+| `flatten`      | Flatten one level of nesting |
+| `groupBy`      | Group by key function → object of key → array |
+| `partition`    | Split into `[pass, fail]` by predicate |
+| `zip`          | Pair elements from two arrays, truncating to the shorter |
+| `range`        | Generate numbers `[start, end)` by `step` |
+| `countBy`      | Count occurrences by key function |
+| `intersection` | Elements in both arrays, preserving order of first |
+| `difference`   | Elements in first array not in second |
